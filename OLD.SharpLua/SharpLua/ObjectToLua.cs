@@ -103,7 +103,7 @@ namespace SharpLua
                                            mi = null;
                                            foreach (MethodInfo m in miarr)
                                                if (m.Name == member)
-                                                   if (mi.GetGenericArguments().Length == args.Length)
+                                                   if (m.GetGenericArguments().Length == args.Length)
                                                        mi = m;
 
                                            List<object> args2 = new List<object>();
